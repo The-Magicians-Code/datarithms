@@ -1,5 +1,5 @@
 # Summary of algorithms
-[Home](../index.md)\
+[Home](../README.md)\
 By category:
 - cryptography
 - pathfinding
