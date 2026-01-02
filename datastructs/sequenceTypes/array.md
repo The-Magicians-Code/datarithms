@@ -1,7 +1,7 @@
 # Array
-[Back](summary.md)
-[Home](../index.md)
-### Definition: 
+[Back](../summary.md)
+[Home](../../index.md)
+### Definition
 > an iterable list of values which are all of the same type
 
 What is it?\
@@ -20,7 +20,7 @@ Array's values are accessible by any positive integer in the following range:
 ````latex
 -1 < index < (items in array - 1)
 ````
-### In code:
+### In code
 ````python
 x = [1, 2, 3]
 # Accessing index
@@ -28,6 +28,5 @@ x[0]
 # >>> 1
 ````
 ### Tags
-
 Graphs in markdown? Possible to visualise natively?
 Latex in markdown?

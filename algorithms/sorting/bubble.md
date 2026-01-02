@@ -1,6 +1,7 @@
 # Bubblesort
-[Back](../summary.md)\
-Sample for bubblesort
+[Back](../summary.md)
+[Home](../../index.md)
+### Definition
 
 ### In code
 ````python

@@ -5,6 +5,7 @@ By category:
 - trees
 
 Alphabetical:
-- [Array](array.md)
+- [Array](./sequenceTypes/array.md)
+- [List](./sequenceTypes/list.md)
 
 # Comparisons of data structures
