@@ -15,14 +15,12 @@ Comparison with other structures for a specific type of data ie what kind of str
 
 A string is an array of characters
 
-### Related
-[List](list.md)
-
 ### Methods
 Array's values are accessible by any positive integer in the following range:
-````latex
--1 < index < (items in array - 1)
+````math
+-1 < i < (n - 1)
 ````
+where ``i`` represents index and ``n`` the number of values within an array
 ### In code
 ````python
 x = [1, 2, 3]
@@ -33,3 +31,6 @@ x[0]
 ### Tags
 Graphs in markdown? Possible to visualise natively?
 Latex in markdown?
+
+### Related
+[List](list.md)
