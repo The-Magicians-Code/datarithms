@@ -5,4 +5,7 @@ By category:
 - pathfinding
 - sorting
 
+Alphabetical:
+- [Array](array.md)
+
 # Comparisons of data structures
