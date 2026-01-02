@@ -1,9 +1,8 @@
 # Data structures
 [Home](../index.md)\
 By category:
-- cryptography
-- pathfinding
-- sorting
+- graphs
+- trees
 
 Alphabetical:
 - [Array](array.md)
