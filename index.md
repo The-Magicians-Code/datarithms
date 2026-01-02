@@ -1,5 +1,5 @@
 ---
-layout: content-only
+layout: default
 ---
 
 {% include_relative README.md %}
