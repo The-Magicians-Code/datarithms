@@ -1,5 +1,5 @@
 # Data structures
-[Home](/index.md)\
+[Home](../index.md)\
 By category:
 - cryptography
 - pathfinding
