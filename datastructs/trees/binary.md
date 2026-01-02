@@ -1,3 +1,3 @@
 # Binary tree
 [Back](../summary.md)
-[Home](../../README.md)
+[Home](../../index.md)

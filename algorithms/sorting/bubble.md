@@ -1,6 +1,6 @@
 # Bubblesort
 [Back](../summary.md)
-[Home](../../README.md)
+[Home](../../index.md)
 ### Definition
 
 ### In code

@@ -1,6 +1,6 @@
 # Array
 [Back](../summary.md)
-[Home](../../README.md)
+[Home](../../index.md)
 ### Definition
 > an iterable list of values which are all of the same type
 
