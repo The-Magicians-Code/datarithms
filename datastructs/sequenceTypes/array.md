@@ -15,6 +15,9 @@ Comparison with other structures for a specific type of data ie what kind of str
 
 A string is an array of characters
 
+### Related
+[List](list.md)
+
 ### Methods
 Array's values are accessible by any positive integer in the following range:
 ````latex
