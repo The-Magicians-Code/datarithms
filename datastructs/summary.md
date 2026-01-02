@@ -1,5 +1,5 @@
 # Data structures
-[Home](../index.md)\
+[Back](../index.md)\
 By category:
 - graphs
 - trees
