@@ -1,5 +1,5 @@
 ---
-title: Datarithms
+layout: null
 ---
 
 {% include_relative README.md %}
