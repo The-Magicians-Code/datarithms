@@ -1,5 +1,5 @@
 # Array
-[Back](../summary.md)
+[Back](summary.md)
 ### Definition: 
 > an iterable list of values which are all of the same type
 
