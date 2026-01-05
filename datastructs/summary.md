@@ -1,9 +1,5 @@
 # Data structures
 [Back](../index.md)
-<!-- 
-Alphabetical:
-- [Array](./sequenceTypes/array.md)
-- [List](./sequenceTypes/list.md) -->
 
 ### All data structures
 

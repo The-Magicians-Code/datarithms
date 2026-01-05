@@ -1,9 +1,5 @@
 # Summary of algorithms
 [Back](../index.md)
-<!-- 
-Alphabetical:
-- [Bubblesort](./sorting/bubble.md)
-- [Quicksort](./sorting/quick.md) -->
 
 ### All algorithms
 
