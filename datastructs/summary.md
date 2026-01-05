@@ -13,3 +13,16 @@ Alphabetical:
 {%- endfor %}
 
 # Comparisons of data structures
+
+## Measures for Data Structures
+
+### Space Complexity
+- Memory usage (bytes, kilobytes)
+- Overhead per element stored
+- Cache locality/efficiency
+
+### Time Complexity of Operations
+- **Access**: How fast can you retrieve an element? O(1), O(n), O(log n), etc.
+- **Search**: How fast can you find an element?
+- **Insertion/Deletion**: Cost of modifying the structure
+- **Traversal**: Cost of visiting all elements
