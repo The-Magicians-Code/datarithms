@@ -9,5 +9,8 @@ Alphabetical:
 - [Bubblesort](./sorting/bubble.md)
 - [Quicksort](./sorting/quick.md)
 
+### All algorithms
+
+
 ### The Big-O notation
 Also known as Space-time complexity
