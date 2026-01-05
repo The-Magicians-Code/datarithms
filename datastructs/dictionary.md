@@ -1,2 +1,5 @@
 # Dictionary
-Iterable key-value pairs
+[Back](../summary.md)
+[Home](../../index.md)
+### Definition
+> an iterable of key-value pairs
