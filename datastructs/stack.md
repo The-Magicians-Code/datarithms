@@ -1,3 +1,3 @@
 # Stack
-[Back](../summary.md)
-[Home](../../index.md)
+[Back](./summary.md)
+[Home](../index.md)
