@@ -27,10 +27,6 @@ jobs:
             echo -e "---\n---\n$(cat "$file")" > "$file"
           done
 
-      - name: Convert .md links to .html
-        run: |
-          find . -name "*.md" -not -path "./.git/*" -exec sed -i 's/\.md)/.html)/g' {} \;
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
