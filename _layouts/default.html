@@ -15,5 +15,10 @@
       {{ content }}
 
     </div>
+    <script>
+      document.querySelectorAll('a[href$=".md"]').forEach(link => {
+        link.href = link.href.replace(/\.md$/, '.html');
+      });
+    </script>
   </body>
 </html>
