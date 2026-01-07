@@ -1,6 +1,3 @@
----
-title: Bubblesort
----
 # Bubblesort
 [Back](../summary.md)
 [Home](../../index.md)

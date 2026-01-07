@@ -1,6 +1,3 @@
----
-title: Array
----
 # Array
 [Back](../summary.md)
 [Home](../../index.md)

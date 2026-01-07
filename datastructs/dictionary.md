@@ -1,6 +1,3 @@
----
-title: Dictionary
----
 # Dictionary
 [Back](../summary.md)
 [Home](../../index.md)

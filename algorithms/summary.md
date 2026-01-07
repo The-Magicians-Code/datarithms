@@ -1,6 +1,3 @@
----
-title: Algorithms
----
 # Summary of algorithms
 [Back](../index.md)
 
