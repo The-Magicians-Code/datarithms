@@ -1,3 +1,6 @@
+---
+title: Data structures
+---
 # Data structures
 [Back](../index.md)
 

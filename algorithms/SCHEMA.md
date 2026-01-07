@@ -1,3 +1,6 @@
+---
+title: Schema
+---
 # Name
 [Back](../summary.md)
 [Home](../../index.md)
