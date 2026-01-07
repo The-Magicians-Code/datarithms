@@ -22,5 +22,6 @@ This book aims to assist in finding answers for following questions:
 
 ### Time complexity
 > as the input size grows, how much longer does the algorithm take to complete?
+
 ### Space complexity
 > as the input size grows, how much more memory does the algorithm use?
