@@ -4,7 +4,7 @@ Sorted into two folders:
 - [Data Structures](./datastructs/summary.md)
 - [Algorithms](./algorithms/summary.md)
 
-# Data structures and algorithms
+### Data structures and algorithms
 A simple repo for learning about most popular and widely used ... in programming  
 Idea is to make it also easily searchable  
 Includes samples from Python, maybe other langs in future
@@ -19,3 +19,8 @@ This book aims to assist in finding answers for following questions:
 * What structures and algorithms to use for networking for example?
 * In what way does one data structure and/or algorithm differ from another, advantages/disadvantages?
 * Speed of alorithms?
+
+### Time complexity
+> as the input size grows, how much longer does the algorithm take to complete?
+### Space complexity
+> as the input size grows, how much more memory does the algorithm use?
