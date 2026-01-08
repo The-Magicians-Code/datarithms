@@ -182,7 +182,9 @@ print(f"Path: {path}")  # [(0,0), (0,1), (0,2), (0,3), (0,4), (1,4), (2,4), (3,4
 |------|------------|
 | Best | O(1) - goal is start |
 | Average | O(b^d) - depends on heuristic quality |
-| Worst | O(b^d) where b = branching, d = depth |
+| Worst | O(b^d) |
+
+Where b = branching factor (average neighbors per node), d = depth of solution.
 
 With perfect heuristic: O(d). With h=0: becomes Dijkstra O(E log V).
 

@@ -165,6 +165,8 @@ print("Path from 0 to 3:", reconstruct_path(next_v, 0, 3))
 |------|------------|
 | All  | O(V³)      |
 
+Where V = number of vertices.
+
 Three nested loops over V vertices.
 
 ### Space complexity

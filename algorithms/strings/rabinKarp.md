@@ -248,6 +248,8 @@ print(f"Longest repeated substring: '{longest_repeated_substring(s)}'")  # 'ana'
 | Average | O(n + m) |
 | Worst | O(n × m) |
 
+Where n = text length, m = pattern length.
+
 Worst case with many hash collisions. Average case assumes good hash function.
 
 ### Space complexity

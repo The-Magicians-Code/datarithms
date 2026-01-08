@@ -208,6 +208,8 @@ print(f"MST edges: {mst}, Total: {total}")
 | Prim (heap) | O(E log V) |
 | Prim (matrix) | O(V²) |
 
+Where V = number of vertices, E = number of edges.
+
 ### Space complexity
 O(V) for Union-Find/visited. O(E) for edge list or O(V²) for adjacency matrix.
 

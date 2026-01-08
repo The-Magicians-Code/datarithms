@@ -197,6 +197,8 @@ print(find_order(4, prereqs))  # [0, 1, 2, 3] or [0, 2, 1, 3]
 |------|------------|
 | All  | O(V + E)   |
 
+Where V = number of vertices, E = number of edges.
+
 Each vertex and edge processed once.
 
 ### Space complexity

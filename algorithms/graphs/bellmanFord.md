@@ -172,6 +172,8 @@ except ValueError as e:
 |------|------------|
 | All  | O(V × E)   |
 
+Where V = number of vertices, E = number of edges.
+
 V-1 iterations, each relaxing E edges.
 
 ### Space complexity

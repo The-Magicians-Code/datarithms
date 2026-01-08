@@ -222,6 +222,8 @@ print(f"Compressed: '{compress_string(s)}'")  # 'abc'
 | Z-function | O(n) |
 | Search | O(n + m) |
 
+Where n = text length, m = pattern length.
+
 Linear time for both preprocessing and search.
 
 ### Space complexity

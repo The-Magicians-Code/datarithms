@@ -162,6 +162,8 @@ print(f"Distance: {dist}, Path: {path}")  # Distance: 13, Path: ['A', 'C', 'B', 
 | Fibonacci heap | O(E + V log V) |
 | Array (naive)  | O(V²) |
 
+Where V = number of vertices, E = number of edges.
+
 Binary heap is most practical for sparse graphs.
 
 ### Space complexity
