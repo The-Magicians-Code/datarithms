@@ -3,6 +3,15 @@
 
 ## What is Big O?
 
+Big O is a notation used to describe the "computational complexity" of an algorithm. The computational complexity of an algorithm is split into two parts: time complexity and space complexity. 
+- The time complexity: the amount of time the algorithm needs to run relative to the input size. 
+- The space complexity: the amount of memory used by the algorithm relative to the input size.
+
+Typically, people care about the time complexity more than the space complexity, but both are important to know.
+Time complexity: as the input size grows, how much longer does the algorithm take to complete?
+
+Space complexity: as the input size grows, how much more memory does the algorithm use?
+
 Big O notation describes **how an algorithm's performance scales** as input size grows. It answers: "If I double my data, how much longer will this take?"
 
 Think of it as a **speed rating** for algorithms - not the exact time, but how time grows with more data.
