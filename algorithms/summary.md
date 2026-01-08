@@ -3,30 +3,30 @@
 
 ## By Category
 
-{%- assign algorithms = site.pages | where_exp: "page", "page.path contains 'algorithms/'" | where_exp: "page", "page.path != 'algorithms/summary.md'" | sort: "name" -%}
+{% assign algorithms = site.pages | where_exp: "page", "page.path contains 'algorithms/'" | where_exp: "page", "page.path != 'algorithms/summary.md'" | sort: "name" %}
+{% assign categories = "sorting,searching,graphs,dp,strings,greedy,backtracking,bitmath,streaming" | split: "," %}
+{% assign category_names = "Sorting & Selection,Searching,Graph Algorithms,Dynamic Programming,String Algorithms,Greedy Algorithms,Backtracking,Bit Manipulation & Math,Streaming Algorithms" | split: "," %}
 
-{%- assign categories = "sorting,searching,graphs,dp,strings,greedy,backtracking,bitmath,streaming" | split: "," -%}
-
-{%- assign category_names = "Sorting & Selection,Searching,Graph Algorithms,Dynamic Programming,String Algorithms,Greedy Algorithms,Backtracking,Bit Manipulation & Math,Streaming Algorithms" | split: "," -%}
-
-{%- for cat in categories -%}
-{%- assign cat_pages = algorithms | where_exp: "page", "page.path contains cat" -%}
-{%- if cat_pages.size > 0 %}
-
+{% for cat in categories %}
+{% assign cat_pages = algorithms | where_exp: "page", "page.path contains cat" %}
+{% if cat_pages.size > 0 %}
 ### {{ category_names[forloop.index0] }}
-{%- for page in cat_pages %}
-{%- assign algo_name = page.name | replace: '.md', '' -%}
-{%- assign algo_data = site.data.algorithms[algo_name] -%}
+
+{% for page in cat_pages %}
+{% assign algo_name = page.name | replace: '.md', '' %}
+{% assign algo_data = site.data.algorithms[algo_name] %}
 - [{% if algo_data.title %}{{ algo_data.title }}{% else %}{{ algo_name }}{% endif %}]({{ page.url | relative_url }}){% if algo_data %} - {{ algo_data.complexity }}{% if algo_data.note %}, {{ algo_data.note }}{% endif %}{% endif %}
-{%- endfor %}
-{%- endif -%}
-{%- endfor %}
+{% endfor %}
+
+{% endif %}
+{% endfor %}
 
 ---
 
 ## Complexity Reference
 
 ### Time Complexity Classes
+
 | Class | Name | Example |
 |-------|------|---------|
 | O(1) | Constant | Hash table lookup |
@@ -54,7 +54,7 @@
 ### Choosing an Algorithm
 
 | Problem Type | Consider |
-|-------------|----------|
+|--------------|----------|
 | Sorted array search | Binary Search |
 | Shortest path | BFS (unweighted), Dijkstra (weighted) |
 | String matching | KMP, Rabin-Karp |
