@@ -47,11 +47,11 @@ slidingWindow:
 
 # Graph Algorithms
 bfs:
-  title: "BFS"
+  title: "Breadth-First Search (BFS)"
   complexity: "O(V + E)"
   note: "shortest path unweighted"
 dfs:
-  title: "DFS"
+  title: "Depth-First Search (DFS)"
   complexity: "O(V + E)"
   note: "traversal and cycle detection"
 dijkstra:
@@ -71,9 +71,9 @@ topologicalSort:
   complexity: "O(V + E)"
   note: "DAG ordering"
 mst:
-  title: "MST (Kruskal/Prim)"
+  title: "Minimum Spanning Tree (Kruskal/Prim)"
   complexity: "O(E log E)"
-  note: "minimum spanning tree"
+  note: "connects all vertices with minimum cost"
 aStar:
   title: "A* Search"
   complexity: "O(b^d)"
@@ -85,25 +85,25 @@ knapsack:
   complexity: "O(nW)"
   note: "subset selection optimization"
 lcs:
-  title: "LCS"
+  title: "Longest Common Subsequence (LCS)"
   complexity: "O(mn)"
-  note: "longest common subsequence"
+  note: "find shared subsequence"
 editDistance:
-  title: "Edit Distance"
+  title: "Edit Distance (Levenshtein)"
   complexity: "O(mn)"
   note: "string similarity"
 lis:
-  title: "LIS"
+  title: "Longest Increasing Subsequence (LIS)"
   complexity: "O(n log n)"
-  note: "longest increasing subsequence"
+  note: "find increasing sequence"
 matrixDP:
-  title: "Matrix DP"
+  title: "Matrix Dynamic Programming"
   complexity: "O(mn)"
   note: "grid-based problems"
 
 # String Algorithms
 kmp:
-  title: "KMP"
+  title: "Knuth-Morris-Pratt (KMP)"
   complexity: "O(n + m)"
   note: "pattern matching"
 rabinKarp:
@@ -145,7 +145,7 @@ nQueens:
 
 # Bit Manipulation & Math
 bitmaskDP:
-  title: "Bitmask DP"
+  title: "Bitmask Dynamic Programming"
   complexity: "O(n² × 2^n)"
   note: "subset state DP"
 xorTricks:
@@ -153,7 +153,7 @@ xorTricks:
   complexity: "O(n)"
   note: "duplicate/missing detection"
 gcd:
-  title: "GCD/LCM"
+  title: "Greatest Common Divisor (GCD)"
   complexity: "O(log n)"
   note: "Euclidean algorithm"
 fastExpo:
