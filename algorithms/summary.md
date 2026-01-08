@@ -3,62 +3,22 @@
 
 ## By Category
 
-### Sorting & Selection
-- [Quick Sort](./sorting/quickSort.md) - O(n log n) average, divide and conquer
-- [Merge Sort](./sorting/mergeSort.md) - O(n log n), stable, divide and conquer
-- [Heap Sort](./sorting/heapSort.md) - O(n log n) guaranteed, in-place
-- [Counting Sort](./sorting/countingSort.md) - O(n + k), linear for integers
-- [Radix Sort](./sorting/radixSort.md) - O(d(n + k)), linear for fixed digits
-- [Quickselect](./sorting/quickselect.md) - O(n) average, k-th element selection
+{%- assign algorithms = site.pages | where_exp: "page", "page.path contains 'algorithms/'" | where_exp: "page", "page.path != 'algorithms/summary.md'" | sort: "name" -%}
 
-### Searching
-- [Binary Search](./searching/binarySearch.md) - O(log n), sorted arrays
-- [Two Pointers](./searching/twoPointers.md) - O(n), linear traversal patterns
-- [Sliding Window](./searching/slidingWindow.md) - O(n), contiguous subarray problems
+{%- assign categories = "sorting,searching,graphs,dp,strings,greedy,backtracking,bitmath,streaming" | split: "," -%}
 
-### Graph Algorithms
-- [BFS](./graphs/bfs.md) - O(V + E), shortest path unweighted
-- [DFS](./graphs/dfs.md) - O(V + E), traversal and cycle detection
-- [Dijkstra](./graphs/dijkstra.md) - O(E log V), shortest path weighted
-- [Bellman-Ford](./graphs/bellmanFord.md) - O(VE), handles negative weights
-- [Floyd-Warshall](./graphs/floydWarshall.md) - O(V³), all-pairs shortest path
-- [Topological Sort](./graphs/topologicalSort.md) - O(V + E), DAG ordering
-- [MST (Kruskal/Prim)](./graphs/mst.md) - O(E log E), minimum spanning tree
-- [A* Search](./graphs/aStar.md) - O(b^d), heuristic pathfinding
+{%- assign category_names = "Sorting & Selection,Searching,Graph Algorithms,Dynamic Programming,String Algorithms,Greedy Algorithms,Backtracking,Bit Manipulation & Math,Streaming Algorithms" | split: "," -%}
 
-### Dynamic Programming
-- [Knapsack](./dp/knapsack.md) - O(nW), subset selection optimization
-- [LCS](./dp/lcs.md) - O(mn), longest common subsequence
-- [Edit Distance](./dp/editDistance.md) - O(mn), string similarity
-- [LIS](./dp/lis.md) - O(n log n), longest increasing subsequence
-- [Matrix DP](./dp/matrixDP.md) - O(mn), grid-based problems
+{%- for cat in categories -%}
+{%- assign cat_pages = algorithms | where_exp: "page", "page.path contains cat" -%}
+{%- if cat_pages.size > 0 %}
 
-### String Algorithms
-- [KMP](./strings/kmp.md) - O(n + m), pattern matching
-- [Rabin-Karp](./strings/rabinKarp.md) - O(n + m) avg, rolling hash
-- [Z-Algorithm](./strings/zAlgorithm.md) - O(n), prefix matching
-
-### Greedy Algorithms
-- [Interval Scheduling](./greedy/intervalScheduling.md) - O(n log n), non-overlapping intervals
-- [Huffman Coding](./greedy/huffmanCoding.md) - O(n log n), optimal prefix codes
-- [Activity Selection](./greedy/activitySelection.md) - O(n log n), maximum activities
-
-### Backtracking
-- [Subsets](./backtracking/subsets.md) - O(n × 2^n), power set generation
-- [Permutations](./backtracking/permutations.md) - O(n × n!), all arrangements
-- [N-Queens](./backtracking/nQueens.md) - O(n!), constraint satisfaction
-
-### Bit Manipulation & Math
-- [Bitmask DP](./bitmath/bitmaskDP.md) - O(n² × 2^n), subset state DP
-- [XOR Tricks](./bitmath/xorTricks.md) - O(n), duplicate/missing detection
-- [GCD/LCM](./bitmath/gcd.md) - O(log n), Euclidean algorithm
-- [Fast Exponentiation](./bitmath/fastExpo.md) - O(log n), power computation
-- [Sieve of Eratosthenes](./bitmath/sieve.md) - O(n log log n), prime generation
-
-### Streaming Algorithms
-- [Reservoir Sampling](./streaming/reservoirSampling.md) - O(n), random sampling from stream
-- [Count-Min Sketch](./streaming/countMinSketch.md) - O(1), frequency estimation
-- [HyperLogLog](./streaming/hyperLogLog.md) - O(1), cardinality estimation
+### {{ category_names[forloop.index0] }}
+{%- for page in cat_pages %}
+- [{{ page.name | replace: '.md', '' }}]({{ page.url | relative_url }})
+{%- endfor %}
+{%- endif -%}
+{%- endfor %}
 
 ---
 
