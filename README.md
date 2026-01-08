@@ -4,6 +4,7 @@ A beginner-friendly guide to **Data Structures** and **Algorithms** with clear e
 
 ## Start Here
 
+- [Big O Notation](./bigO.md) - Understanding algorithm speed and efficiency
 - [Data Structures](./datastructs/summary.md) - How to store and organize data
 - [Algorithms](./algorithms/summary.md) - How to solve problems efficiently
 
@@ -31,6 +32,8 @@ Example: Searching a phone book
 Example: Copying vs. sorting in-place
 - **O(n)** - Need a full copy of the data
 - **O(1)** - Only need a few extra variables
+
+**[Learn more about Big O Notation](./bigO.md)** - Complete guide with code examples
 
 ## Structure
 
