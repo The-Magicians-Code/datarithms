@@ -1,6 +1,6 @@
 # Research: Interview-Relevant Algorithms and Data Structures
 
-This list focuses on commonly asked topics in software interviews (including FAANG-style interviews) and maps them to categories and keywords that describe where they show up in real systems. This is a knowledge-based synthesis without external browsing.
+This list focuses on commonly asked topics in software interviews and maps them to categories and keywords that describe where they show up in real systems. It was validated against publicly available university syllabi (see Sources), with a last validation date of 2026-01-08.
 
 ## Data Structures
 
@@ -171,3 +171,12 @@ This list focuses on commonly asked topics in software interviews (including FAA
 ## Interview Emphasis Notes
 - Expect heavy focus on arrays/strings, hash maps/sets, stacks/queues, trees, graphs, and dynamic programming.
 - Emphasis is on correctness, complexity analysis, and clean implementation.
+
+## Sources (Validation)
+Last validated: 2026-01-08
+
+University syllabi and course descriptions:
+- MIT 6.006 Introduction to Algorithms (Spring 2020 syllabus): `https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/pages/syllabus`
+- Stanford CS161 Design and Analysis of Algorithms (course description): `https://bulletin.stanford.edu/courses/1056871`
+- Stanford CS161 Design and Analysis of Algorithms (Fall 2025 course page): `https://cs161-stanford.github.io/`
+- Princeton COS 226 Algorithms and Data Structures (Spring 2025 syllabus): `https://www.cs.princeton.edu/courses/archive/spring25/cos226/`
