@@ -74,16 +74,17 @@ a.isdisjoint(b)    # No common elements?
 evens = {x for x in range(10) if x % 2 == 0}
 
 # Common patterns: deduplication
-unique = list(set(duplicated_list))
+duplicated_list = [1, 2, 2, 3, 3, 3]
+unique = list(set(duplicated_list))  # [1, 2, 3]
 
-# Graph visited set
+# Graph visited set pattern
 visited = set()
-def dfs(node):
+def dfs(node, graph):
     if node in visited:
         return
     visited.add(node)
-    for neighbor in node.neighbors:
-        dfs(neighbor)
+    for neighbor in graph.get(node, []):
+        dfs(neighbor, graph)
 ```
 
 ### Time complexity
