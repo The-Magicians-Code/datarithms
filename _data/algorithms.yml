@@ -1,0 +1,137 @@
+# Algorithm metadata for summary page
+# Key is filename (without .md), value has complexity and description
+
+# Sorting & Selection
+quickSort:
+  complexity: "O(n log n)"
+  note: "average, divide and conquer"
+mergeSort:
+  complexity: "O(n log n)"
+  note: "stable, divide and conquer"
+heapSort:
+  complexity: "O(n log n)"
+  note: "guaranteed, in-place"
+countingSort:
+  complexity: "O(n + k)"
+  note: "linear for integers"
+radixSort:
+  complexity: "O(d(n + k))"
+  note: "linear for fixed digits"
+quickselect:
+  complexity: "O(n)"
+  note: "average, k-th element selection"
+
+# Searching
+binarySearch:
+  complexity: "O(log n)"
+  note: "sorted arrays"
+twoPointers:
+  complexity: "O(n)"
+  note: "linear traversal patterns"
+slidingWindow:
+  complexity: "O(n)"
+  note: "contiguous subarray problems"
+
+# Graph Algorithms
+bfs:
+  complexity: "O(V + E)"
+  note: "shortest path unweighted"
+dfs:
+  complexity: "O(V + E)"
+  note: "traversal and cycle detection"
+dijkstra:
+  complexity: "O(E log V)"
+  note: "shortest path weighted"
+bellmanFord:
+  complexity: "O(VE)"
+  note: "handles negative weights"
+floydWarshall:
+  complexity: "O(V³)"
+  note: "all-pairs shortest path"
+topologicalSort:
+  complexity: "O(V + E)"
+  note: "DAG ordering"
+mst:
+  complexity: "O(E log E)"
+  note: "minimum spanning tree"
+aStar:
+  complexity: "O(b^d)"
+  note: "heuristic pathfinding"
+
+# Dynamic Programming
+knapsack:
+  complexity: "O(nW)"
+  note: "subset selection optimization"
+lcs:
+  complexity: "O(mn)"
+  note: "longest common subsequence"
+editDistance:
+  complexity: "O(mn)"
+  note: "string similarity"
+lis:
+  complexity: "O(n log n)"
+  note: "longest increasing subsequence"
+matrixDP:
+  complexity: "O(mn)"
+  note: "grid-based problems"
+
+# String Algorithms
+kmp:
+  complexity: "O(n + m)"
+  note: "pattern matching"
+rabinKarp:
+  complexity: "O(n + m)"
+  note: "avg, rolling hash"
+zAlgorithm:
+  complexity: "O(n)"
+  note: "prefix matching"
+
+# Greedy Algorithms
+intervalScheduling:
+  complexity: "O(n log n)"
+  note: "non-overlapping intervals"
+huffmanCoding:
+  complexity: "O(n log n)"
+  note: "optimal prefix codes"
+activitySelection:
+  complexity: "O(n log n)"
+  note: "maximum activities"
+
+# Backtracking
+subsets:
+  complexity: "O(n × 2^n)"
+  note: "power set generation"
+permutations:
+  complexity: "O(n × n!)"
+  note: "all arrangements"
+nQueens:
+  complexity: "O(n!)"
+  note: "constraint satisfaction"
+
+# Bit Manipulation & Math
+bitmaskDP:
+  complexity: "O(n² × 2^n)"
+  note: "subset state DP"
+xorTricks:
+  complexity: "O(n)"
+  note: "duplicate/missing detection"
+gcd:
+  complexity: "O(log n)"
+  note: "Euclidean algorithm"
+fastExpo:
+  complexity: "O(log n)"
+  note: "power computation"
+sieve:
+  complexity: "O(n log log n)"
+  note: "prime generation"
+
+# Streaming Algorithms
+reservoirSampling:
+  complexity: "O(n)"
+  note: "random sampling from stream"
+countMinSketch:
+  complexity: "O(1)"
+  note: "frequency estimation"
+hyperLogLog:
+  complexity: "O(1)"
+  note: "cardinality estimation"

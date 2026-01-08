@@ -15,7 +15,9 @@
 
 ### {{ category_names[forloop.index0] }}
 {%- for page in cat_pages %}
-- [{{ page.name | replace: '.md', '' }}]({{ page.url | relative_url }})
+{%- assign algo_name = page.name | replace: '.md', '' -%}
+{%- assign algo_data = site.data.algorithms[algo_name] -%}
+- [{{ algo_name }}]({{ page.url | relative_url }}){% if algo_data %} - {{ algo_data.complexity }}{% if algo_data.note %}, {{ algo_data.note }}{% endif %}{% endif %}
 {%- endfor %}
 {%- endif -%}
 {%- endfor %}
