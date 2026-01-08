@@ -2,6 +2,10 @@
 # Key is filename (without .md)
 
 # Sorting & Selection
+bubbleSort:
+  title: "Bubble Sort"
+  complexity: "O(n²)"
+  note: "simple, educational"
 quickSort:
   title: "Quick Sort"
   complexity: "O(n log n)"
