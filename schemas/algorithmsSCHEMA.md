@@ -18,6 +18,19 @@ Make sure that the relative paths are valid, depending on where the algorithm fi
 [Home](../../index.md)
 ```
 
+### Category
+Primary classification of this algorithm.
+
+Example categories:
+- Sorting (bubble, quick, merge)
+- Pathfinding (Dijkstra, A*, BFS)
+- Searching (binary search, linear)
+- Cryptography (ROT13, AES, RSA)
+- Graph traversal (DFS, BFS)
+- Dynamic programming
+
+**Category:** `category-name`
+
 ### Definition
 Short and simple answer to the question: What is it?
 

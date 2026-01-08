@@ -18,6 +18,18 @@ Make sure that the relative paths are valid, depending on where the data structu
 [Home](../../index.md)
 ```
 
+### Category
+Primary classification of this data structure.
+
+Example categories:
+- Sequence types (arrays, lists, strings)
+- Hash-based (hashmap, dictionary, set)
+- Trees (binary tree, BST, heap)
+- Graphs
+- Stacks & Queues
+
+**Category:** `category-name`
+
 ### Definition
 Short and simple answer to the question: What is it?
 
