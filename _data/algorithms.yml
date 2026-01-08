@@ -1,137 +1,176 @@
 # Algorithm metadata for summary page
-# Key is filename (without .md), value has complexity and description
+# Key is filename (without .md)
 
 # Sorting & Selection
 quickSort:
+  title: "Quick Sort"
   complexity: "O(n log n)"
   note: "average, divide and conquer"
 mergeSort:
+  title: "Merge Sort"
   complexity: "O(n log n)"
   note: "stable, divide and conquer"
 heapSort:
+  title: "Heap Sort"
   complexity: "O(n log n)"
   note: "guaranteed, in-place"
 countingSort:
+  title: "Counting Sort"
   complexity: "O(n + k)"
   note: "linear for integers"
 radixSort:
+  title: "Radix Sort"
   complexity: "O(d(n + k))"
   note: "linear for fixed digits"
 quickselect:
+  title: "Quickselect"
   complexity: "O(n)"
   note: "average, k-th element selection"
 
 # Searching
 binarySearch:
+  title: "Binary Search"
   complexity: "O(log n)"
   note: "sorted arrays"
 twoPointers:
+  title: "Two Pointers"
   complexity: "O(n)"
   note: "linear traversal patterns"
 slidingWindow:
+  title: "Sliding Window"
   complexity: "O(n)"
   note: "contiguous subarray problems"
 
 # Graph Algorithms
 bfs:
+  title: "BFS"
   complexity: "O(V + E)"
   note: "shortest path unweighted"
 dfs:
+  title: "DFS"
   complexity: "O(V + E)"
   note: "traversal and cycle detection"
 dijkstra:
+  title: "Dijkstra"
   complexity: "O(E log V)"
   note: "shortest path weighted"
 bellmanFord:
+  title: "Bellman-Ford"
   complexity: "O(VE)"
   note: "handles negative weights"
 floydWarshall:
+  title: "Floyd-Warshall"
   complexity: "O(V³)"
   note: "all-pairs shortest path"
 topologicalSort:
+  title: "Topological Sort"
   complexity: "O(V + E)"
   note: "DAG ordering"
 mst:
+  title: "MST (Kruskal/Prim)"
   complexity: "O(E log E)"
   note: "minimum spanning tree"
 aStar:
+  title: "A* Search"
   complexity: "O(b^d)"
   note: "heuristic pathfinding"
 
 # Dynamic Programming
 knapsack:
+  title: "Knapsack"
   complexity: "O(nW)"
   note: "subset selection optimization"
 lcs:
+  title: "LCS"
   complexity: "O(mn)"
   note: "longest common subsequence"
 editDistance:
+  title: "Edit Distance"
   complexity: "O(mn)"
   note: "string similarity"
 lis:
+  title: "LIS"
   complexity: "O(n log n)"
   note: "longest increasing subsequence"
 matrixDP:
+  title: "Matrix DP"
   complexity: "O(mn)"
   note: "grid-based problems"
 
 # String Algorithms
 kmp:
+  title: "KMP"
   complexity: "O(n + m)"
   note: "pattern matching"
 rabinKarp:
+  title: "Rabin-Karp"
   complexity: "O(n + m)"
   note: "avg, rolling hash"
 zAlgorithm:
+  title: "Z-Algorithm"
   complexity: "O(n)"
   note: "prefix matching"
 
 # Greedy Algorithms
 intervalScheduling:
+  title: "Interval Scheduling"
   complexity: "O(n log n)"
   note: "non-overlapping intervals"
 huffmanCoding:
+  title: "Huffman Coding"
   complexity: "O(n log n)"
   note: "optimal prefix codes"
 activitySelection:
+  title: "Activity Selection"
   complexity: "O(n log n)"
   note: "maximum activities"
 
 # Backtracking
 subsets:
+  title: "Subsets"
   complexity: "O(n × 2^n)"
   note: "power set generation"
 permutations:
+  title: "Permutations"
   complexity: "O(n × n!)"
   note: "all arrangements"
 nQueens:
+  title: "N-Queens"
   complexity: "O(n!)"
   note: "constraint satisfaction"
 
 # Bit Manipulation & Math
 bitmaskDP:
+  title: "Bitmask DP"
   complexity: "O(n² × 2^n)"
   note: "subset state DP"
 xorTricks:
+  title: "XOR Tricks"
   complexity: "O(n)"
   note: "duplicate/missing detection"
 gcd:
+  title: "GCD/LCM"
   complexity: "O(log n)"
   note: "Euclidean algorithm"
 fastExpo:
+  title: "Fast Exponentiation"
   complexity: "O(log n)"
   note: "power computation"
 sieve:
+  title: "Sieve of Eratosthenes"
   complexity: "O(n log log n)"
   note: "prime generation"
 
 # Streaming Algorithms
 reservoirSampling:
+  title: "Reservoir Sampling"
   complexity: "O(n)"
   note: "random sampling from stream"
 countMinSketch:
+  title: "Count-Min Sketch"
   complexity: "O(1)"
   note: "frequency estimation"
 hyperLogLog:
+  title: "HyperLogLog"
   complexity: "O(1)"
   note: "cardinality estimation"

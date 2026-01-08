@@ -17,7 +17,7 @@
 {%- for page in cat_pages %}
 {%- assign algo_name = page.name | replace: '.md', '' -%}
 {%- assign algo_data = site.data.algorithms[algo_name] -%}
-- [{{ algo_name }}]({{ page.url | relative_url }}){% if algo_data %} - {{ algo_data.complexity }}{% if algo_data.note %}, {{ algo_data.note }}{% endif %}{% endif %}
+- [{% if algo_data.title %}{{ algo_data.title }}{% else %}{{ algo_name }}{% endif %}]({{ page.url | relative_url }}){% if algo_data %} - {{ algo_data.complexity }}{% if algo_data.note %}, {{ algo_data.note }}{% endif %}{% endif %}
 {%- endfor %}
 {%- endif -%}
 {%- endfor %}
