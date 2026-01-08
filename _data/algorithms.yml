@@ -178,3 +178,9 @@ hyperLogLog:
   title: "HyperLogLog"
   complexity: "O(1)"
   note: "cardinality estimation"
+
+# Cryptography
+rot13:
+  title: "ROT13"
+  complexity: "O(n)"
+  note: "simple substitution cipher"

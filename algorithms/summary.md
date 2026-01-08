@@ -3,8 +3,8 @@
 
 ## By Category
 {% assign algorithms = site.pages | where_exp: "page", "page.path contains 'algorithms/'" | where_exp: "page", "page.path != 'algorithms/summary.md'" | sort: "name" -%}
-{% assign categories = "sorting,searching,graphs,dp,strings,greedy,backtracking,bitmath,streaming" | split: "," -%}
-{% assign category_names = "Sorting & Selection,Searching,Graph Algorithms,Dynamic Programming,String Algorithms,Greedy Algorithms,Backtracking,Bit Manipulation & Math,Streaming Algorithms" | split: "," %}
+{% assign categories = "sorting,searching,graphs,dp,strings,greedy,backtracking,bitmath,streaming,cryptography" | split: "," -%}
+{% assign category_names = "Sorting & Selection,Searching,Graph Algorithms,Dynamic Programming,String Algorithms,Greedy Algorithms,Backtracking,Bit Manipulation & Math,Streaming Algorithms,Cryptography" | split: "," %}
 
 {% for cat in categories -%}
 {% assign cat_pages = algorithms | where_exp: "page", "page.path contains cat" -%}
