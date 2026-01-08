@@ -1,27 +1,42 @@
-# The one wiki to rule them all
-This place contains most popular data structures and algorithms with explanations and code samples (currently in Python)\
-Sorted into two folders:
-- [Data Structures](./datastructs/summary.md)
-- [Algorithms](./algorithms/summary.md)
+# The One Wiki to Rule Them All
 
-### Data structures and algorithms
-A simple repo for learning about most popular and widely used ... in programming  
-Idea is to make it also easily searchable  
-Includes samples from Python, maybe other langs in future
+A beginner-friendly guide to **Data Structures** and **Algorithms** with clear explanations and Python code examples.
 
-Comparison with other structures for a specific type of data ie what kind of structure would be best for storing and working with this type of data
+## Start Here
 
-This book aims to assist in finding answers for following questions:
-* What data structure I should use to store this type of data?
-* What data structure I should use to work with this type of data?
-* What algorithm to use for this type of problem?
-* What algorithm would have the best time-space complexity for this type of problem?
-* What structures and algorithms to use for networking for example?
-* In what way does one data structure and/or algorithm differ from another, advantages/disadvantages?
-* Speed of alorithms?
+- [Data Structures](./datastructs/summary.md) - How to store and organize data
+- [Algorithms](./algorithms/summary.md) - How to solve problems efficiently
 
-### Time complexity
-> as the input size grows, how much longer does the algorithm take to complete?
+## What You'll Learn
 
-### Space complexity
-> as the input size grows, how much more memory does the algorithm use?
+This guide helps answer common questions:
+
+- **Which data structure should I use?** - Arrays, linked lists, trees, graphs, and when to pick each one
+- **Which algorithm solves my problem?** - Sorting, searching, pathfinding, and more
+- **How fast is it?** - Time and space complexity explained simply
+- **What are the trade-offs?** - Pros and cons of different approaches
+
+## Key Concepts
+
+### Time Complexity
+> How much *longer* does an algorithm take as input grows?
+
+Example: Searching a phone book
+- **O(n)** - Check every page (slow)
+- **O(log n)** - Open to middle, eliminate half each time (fast)
+
+### Space Complexity
+> How much *more memory* does an algorithm need as input grows?
+
+Example: Copying vs. sorting in-place
+- **O(n)** - Need a full copy of the data
+- **O(1)** - Only need a few extra variables
+
+## Structure
+
+Each topic includes:
+1. **Definition** - What it is in plain terms
+2. **Use cases** - When to use it
+3. **Code** - Working Python examples
+4. **Complexity** - Time and space analysis
+5. **Trade-offs** - When to use vs. avoid
