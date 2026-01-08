@@ -27,7 +27,8 @@ def main():
     root = Path(__file__).parent
     md_files = sorted(
         list(root.glob('algorithms/**/*.md')) +
-        list(root.glob('datastructs/**/*.md'))
+        list(root.glob('datastructs/**/*.md')) +
+        [root / 'bigO.md']  # Include root-level Big O guide
     )
 
     passed, failed = 0, []
