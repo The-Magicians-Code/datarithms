@@ -80,7 +80,7 @@ for (int i = 0; i < oneHundredth; i++) {
     nums.add(arr[i])
 }
 ```
-This algorithm has a space complexity of $O(n)$. The array `nums` stores the first 1% of numbers in `arr`. This gives a space complexity of $O(\frac{n}{100})=O(n)$.
+This algorithm has a space complexity of $O(n)$. The array `nums` stores the first 1% of numbers in `arr`. This gives a space complexity of $O(\\frac{n}{100})=O(n)$.
 ```text
 // Given integer arrays "arr" with length n and "arr2" with length m,
 
@@ -92,7 +92,7 @@ for (int i = 0; i < arr.length; i++) {
     }
 }
 ```
-This algorithm has a space complexity of $O(n \cdot m)$. We are creating a `grid` that has dimensions $n \cdot m$.
+This algorithm has a space complexity of $O(n \\cdot m)$. We are creating a `grid` that has dimensions $n \\cdot m$.
 
 ## The Key Insight
 
