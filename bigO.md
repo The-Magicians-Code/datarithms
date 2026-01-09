@@ -1,7 +1,3 @@
----
-render_with_liquid: false
----
-
 # Big O Notation
 [Home](./index.md)
 
@@ -96,7 +92,7 @@ for (int i = 0; i < arr.length; i++) {
     }
 }
 ```
-This algorithm has a space complexity of $O(n \cdot m)$. We are creating a `grid` that has dimensions $n \cdot m$.
+This algorithm has a space complexity of $O(n ⋅ m)$. We are creating a `grid` that has dimensions $n ⋅ m$.
 
 ## The Key Insight
 
