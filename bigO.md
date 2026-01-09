@@ -2,7 +2,6 @@
 [Home](./index.md)
 
 ## What is Big O?
-
 Big O is a notation used to describe the "computational complexity" of an algorithm. The computational complexity of an algorithm is split into two parts: time complexity and space complexity. 
 - The time complexity: the amount of **time** the algorithm needs to run relative to the input size. 
 - The space complexity: the amount of **memory** used by the algorithm relative to the input size.
@@ -24,6 +23,76 @@ In most algorithms all of them are equal, some algorithms have them different.
 - Best case
 - Average case
 - Worst case (most correct when describing the time or space complexity)
+
+### Analysing time complexity
+Let's look at some example algorithms in pseudo-code:
+````
+// Given an integer array "arr" with length n,
+
+for (int num: arr) {
+    print(num)
+}
+````
+This algorithm has a time complexity of O(n). In each for loop iteration, we are performing a print, which costs $O(1)$. The for loop iterates $n$ times, which gives a time complexity of $O(1⋅n)=O(n)$.
+````
+// Given an integer array "arr" with length $n$,
+
+for (int num: arr) {
+    for (int i = 0; i < 500,000; i++) {
+        print(num)
+    }
+}
+````
+This algorithm has a time complexity of $O(n)$. In each inner for loop iteration, we are performing a print, which costs $O(1)$. This for loop iterates 500,000 times, which means each outer for loop iteration costs $O(500000)=O(1)$. The outer for loop iterates n times, which gives a time complexity of O(n).
+
+Even though the first two algorithms technically have the same time complexity, in reality the second algorithm is much slower than the first one. It's correct to say that the time complexity is $O(n)$, but it's important to be able to discuss the differences between practicality and theory.
+
+### Analyzing space complexity
+When you initialize variables like arrays or strings, your algorithm is allocating memory. We never count the space used by the input (it is bad practice to modify the input), and usually don't count the space used by the output (the answer) unless an interviewer asks us to.
+
+>In the below examples, the code is only allocating memory so that we can analyze the space complexity, so we will consider everything we allocate as part of the space complexity (there is no "answer").
+
+````
+// Given an integer array "arr" with length n
+
+for (int num: arr) {
+    print(num)
+}
+````
+This algorithm has a space complexity of $O(1)$. The only space allocated is an integer variable ``num``, which is constant relative to $n$.
+````
+// Given an integer array "arr" with length n
+
+Array doubledNums = int[]
+
+for (int num: arr) {
+    doubledNums.add(num * 2)
+}
+````
+This algorithm has a space complexity of $O(n)$. The array ``doubledNums`` stores $n$ integers at the end of the algorithm.
+````
+// Given an integer array "arr" with length n
+
+Array nums = int[]
+int oneHundredth = n / 100
+
+for (int i = 0; i < oneHundredth; i++) {
+    nums.add(arr[i])
+}
+````
+This algorithm has a space complexity of $O(n)$. The array ``nums`` stores the first 1% of numbers in ``arr``. This gives a space complexity of $O(\frac{n}{100})=O(n)$.
+````
+// Given integer arrays "arr" with length n and "arr2" with length m,
+
+Array grid = int[n][m]
+
+for (int i = 0; i < arr.length; i++) {
+    for (int j = 0; j < arr2.length; j++) {
+        grid[i][j] = arr[i] * arr2[j]
+    }
+}
+````
+This algorithm has a space complexity of $O(n \cdot m)$. We are creating a ``grid`` that has dimensions $n \cdot m$.
 
 ## The Key Insight
 
